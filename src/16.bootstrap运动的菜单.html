@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Examples</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+	</head>
+	<style>
+		.my-btnStyle button{width:85px;height:35px;border:none; background: #ccc;}
+		.my-btnStyle .dropdown-menu{animation:0.3s linear imove;}
+		@keyframes imove{
+			0%{opacity: 0;transform:translateY(-20px); }
+			100%{opacity: 1;transform:translateY(0); }
+		}
+	</style>
+	<body>
+		<div class="container">
+			<div class="dropdown my-btnStyle">
+				<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+					导航1
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu menu-width">
+					<li><a href="#"><span class="glyphicon glyphicon-pawn pull-left"></span>目录1</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-pawn pull-left"></span>目录2</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-pawn pull-left"></span>目录3</a></li>
+				</ul>
+			</div>
+		</div>
+	    <script src="js/jquery-3.1.1.js"></script>
+	    <script src="js/bootstrap.js"></script>
+	</body>
+</html>

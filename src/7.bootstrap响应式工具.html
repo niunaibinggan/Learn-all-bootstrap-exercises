@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Examples</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+	</head>
+	<style>
+		.caption p,.caption h3 {
+			text-align: center;
+		}
+		div[class*="col-"]{
+			background: red;
+			border:1px solid #000;
+			min-height:30px;
+		}
+	</style>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 visible-lg-block">col-lg-6</div><!-- visible-lg-block的意思就是当屏幕满足1200px以上，这个div是显示的，其余的时候都隐藏这个div -->
+				<div class="col-lg-6 visible-md-block">col-lg-6</div><!-- visible-md-block的意思就是当屏幕满足992px到1200px之间的时候，这个div才会显示，其余的时候都隐藏这个div -->
+				<div class="col-lg-6 hidden-sm hidden-xs">col-lg-6</div><!-- hidden-sm/xs的意思就是当屏幕小于992px时，这个div才会隐藏，其余的时候都显示这个div -->
+			</div>
+		</div>
+	    <script src="js/jquery-3.1.1.js"></script>
+	    <script src="js/bootstrap.js"></script>
+	</body>
+</html>
